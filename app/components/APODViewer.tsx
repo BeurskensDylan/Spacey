@@ -22,7 +22,7 @@ export default function APODViewer({ apiUrl }: APODViewerProps) {
 
     return (
         <div className="flex flex-col justify-center items-center w-full">
-            <button className="border-1 border-white p-2 rounded" onClick={fetchData}>Get picture of the day</button>
+            <button className="border border-white p-2 rounded" onClick={fetchData}>Get picture of the day</button>
 
             {data && (
                 <div className="flex flex-col justify-center items-center w-100 m-10">
