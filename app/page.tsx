@@ -1,4 +1,5 @@
 import APODViewer from "./components/APODViewer";
+import NEOWSViewer from "./components/NEOWSViewer";
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
       </video>
 
       <h1 className="text-3xl text-center font-bold">Spacey</h1>
-      <APODViewer apiUrl="/api/apod" />
+      <div className="flex flex-col w-full items-center gap-2">
+        <APODViewer apiUrl="/api/apod" />
+        <NEOWSViewer apiUrl="/api/neows" />
+      </div>
     </main>
   );
 }
